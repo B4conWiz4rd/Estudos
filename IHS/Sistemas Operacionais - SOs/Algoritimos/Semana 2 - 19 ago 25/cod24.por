@@ -1,15 +1,17 @@
-programa {
-    funcao inicio () {
-        inteiro reta_a, reta_b, reta_c
-        logico triangulo
-
-        escreva("Digite o valor da primeira reta: ")
-        leia (reta_a)
-        escreva("Digite o valor da primeira reta: ")
-        leia (reta_b)
-        escreva("Digite o valor da primeira reta: ")
-        leia (reta_c)
-
-        triangulo = (reta_a+reta_b)
+programa
+{
+    funcao inicio(){
+        real distancia, preco
+        escreval("--- Calculadora de Preço de Passagem ---")
+        escreva("Digite a distância a percorrer em Km: ")
+        leia(distancia)
+        se (distancia <= 200){
+            preco = distancia * 0.50
+            escreva("O preço da passagem é: ", preco,"R$" )
+        }
+        senao{
+            preco = distancia * 0.45
+            escreva("O preço da passagem é: ", preco,"R$" )
+        }
     }
 }
