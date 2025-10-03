@@ -1,5 +1,4 @@
-programa
-{
+programa{
     funcao inicio(){
         real distancia, preco
         escreval("--- Calculadora de Preço de Passagem ---")
