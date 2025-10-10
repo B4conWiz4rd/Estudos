@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticações: Login e Senha</title>
+    <link rel="shortcut icon" href="../../../../favicon/iconED/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Teste de Formulário - Senha e Usuário</h1>
+    <form action="cadastro.html" method="POST" autocomplete="on">
+    <div>
+        <label for="idusuario">Usuário</label>
+        <input type="text" name="usuario" id="idusuario" size="32" required minlength="8" maxlength="20" placeholder="Colque seu user aqui." autocomplete="username">
+    </div>
+
+    <div>
+        <label for="idsenha">Senha</label>
+        <input type="password" name="senha" id="idsenha" size="32" required minlength="8" maxlength="20" placeholder="Colque sua senha aqui." autocomplete="current-password">
+    </div>
+    <!--Área dos botões-->
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+    </form>
+    <a href="../ex12.html" target="_self" rel="prev"><button>Voltar</button></a>
+
+</body>
+</html>
