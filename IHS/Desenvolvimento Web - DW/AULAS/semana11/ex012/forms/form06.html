@@ -8,31 +8,37 @@
 </head>
 <body>
     <h1>Exemplo de Formulário: Preferências</h1>
-    <fieldset>
-        <legend>Preferências</legend>
-        <form action="cadastro.php" method="POST">
-            <div>
-                <label for="idcor">Cor:</label>
-                <input type="color" name="cor" id="idcor">
-            </div>
-            <br>
-            <div>
-                <label for="idsatisfacao">Nível de Satisfação</label>
-                <input type="range" name="satisfacao" id="idsatisfacao">
-            </div>
-            <br>
-            <div>
-                <label for="idfoto">Foto de perfil: </label>
-                <input type="file" name="foto" id="idfoto">
-            </div>
-            <br>
-            <div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
-            </div>
-        </form>
-    </fieldset>
-    <br>
+        <fieldset>
+            <form action="cadastro.php" method="POST">
+                <fieldset>
+                <legend>Preferências</legend>
+                <div>
+                    <label for="idcor">Cor:</label>
+                    <input type="color" name="cor" id="idcor">
+                </div>
+                <br>
+                <div>
+                    <label for="idsatisfacao">Nível de Satisfação: </label><br>
+                    <label for="idsatisfacao">Insatisfeito</label>
+                    <input type="range" name="satisfacao" id="idsatisfacao" min="1" max="5">
+                    <label for="idsatisfacao">Satisfeito</label>
+                </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                <legend>Upload's</legend>
+                    <div>
+                        <label for="idfoto">Foto de perfil: </label>
+                        <input type="file" name="foto" id="idfoto">
+                    </div>
+                </fieldset>
+                <br>
+                    <div>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+            </form>
+        </fieldset>
     <a href="../ex12.html" target="_self" rel="prev"><button>Voltar</button></a>
 </body>
 </html>
