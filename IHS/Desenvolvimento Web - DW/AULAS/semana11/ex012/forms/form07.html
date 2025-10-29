@@ -7,6 +7,67 @@
     <link rel="shortcut icon" href="../../../../favicon/iconED/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <h1>Exemplo de Formulário: Lista e texto</h1>
+    <form action="cadastro.php" method="POST">
+        <div>
+            <label for="idestado">Estado</label>
+            <select name="estado" id="idestado">
+                <!--optgroup>option*5-->
+                <option value="">-- Escolha o seu MALDITO estado --</option>
+                <option value="acre">Acre</option>
+                <option value="alagoas">Alagoas</option>
+                <option value="amapa">Amapá</option>
+                <option value="amazonas">Amazonas</option>
+                <option value="bahia">Bahia</option>
+                <option value="ceara">Ceará</option>
+                <option value="espiritosanto">Espírito Santo</option>
+                <option value="goias">Goiás</option>
+                <option value="maranhao">Maranhão</option>
+                <option value="matogrosso">Mato Grosso</option>
+                <option value="matogrossodosul">Mato Grosso do Sul</option>
+                <option value="minasgerais">Minas Gerais</option>
+                <option value="para">Pará</option>
+                <option value="paraiba">Paraíba</option>
+                <option value="parana">Paraná</option>
+                <option value="pernanbuco">Pernambuco</option>
+                <option value="piaui">Piauí</option>
+                <option value="helldejaneiro">Rio de Janeiro</option>
+                <option value="riograndedonorte">Rio Grande do Norte</option>
+                <option value="riograndedosul">Rio Grande do Sul</option>
+                <option value="rondonia">Rondônia</option>
+                <option value="roraima">Roraima</option>
+                <option value="santacatarina">Santa Catarina</option>
+                <option value="crakolandia">São Paulo</option>
+                <option value="segipe">Sergipe</option>
+                <option value="tocantins">Tocantins</option>
+            </select>
+        </div>
+        <!--<div>
+            <label for="idprofissao">Profissão: </label>
+            <input type="text" name="profissao" id="idprofissao" list="listadeprofissao">
+                <datalist id="profissao">
+                    <option value="">Provador de comida para pets</option>
+                    <option value="">Testador de tobogã</option>
+                    <option value="">Sereia profissional</option>
+                    <option value="">Concertador de bicho de pelucias</option>
+                    <option value="">Luto de aluguel</option>
+                    <option value="">Extrator de venenos de cobras</option>
+                    <option value="">Cheirador profissional de papel higiênico</option>
+                    <option value="">Professor de LEGO</option>
+                    <option value="">Homem para Globo da Morte</option>
+                </datalist>
+            </input>
+        </div>
+        -->
+        <div>
+            <label for="mensagem">Mensagem</label><br>
+            <textarea name="mensagem" id="idmensagem" cols="30" rows="10" placeholder="Escreva a sua mensagem"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
     <a href="../ex12.html" target="_self" rel="prev"><button>Voltar</button></a>
 </body>
 </html>
