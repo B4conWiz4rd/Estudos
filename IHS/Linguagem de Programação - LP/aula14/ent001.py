@@ -10,6 +10,24 @@ pyautogui.alert(
     button='OK'
 )
 
+pyautogui.alert(
+    text='ATENTE-SE A ESTAR DELOGADO NO NAVEGADOR',
+    title='ALERTA1',
+    button='OK'
+)
+
+pyautogui.alert(
+    text='ATENTE-SE QUE SEU MONITOR POSSUA A RESOLUÇÃO DE 1920x1080',
+    title='ALERTA2',
+    button='OK'
+)
+
+pyautogui.alert(
+    text='ATENTE-SE QUE SEU NAVEGADOR POSSUA A RESOLUÇÃO DE 100%',
+    title='ALERTA3',
+    button='OK'
+)
+
 email = pyautogui.prompt(
     text='Digite o seu e-mail',
     title='Inserir E-mail'
