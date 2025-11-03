@@ -7,17 +7,62 @@
     <link rel="shortcut icon" href="../../../favicon/iconED/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Cadastro de Usuário</h1>
-    <form action="" method="post">
-        <fieldset>
-            <legend>Informações Pessoais</legend>
-            <label for="idnome">Nome completo: </label>
-            <input type="text" name="nome" id="idnome" required maxlength="30" autocomplete="name"><br>
-            <label for="idemail">E-mail: </label>
-            <input type="email" name="email" id="idemail" required maxlength="30" autocomplete="email"><br>
-            <label for="idsenha">Senha</label>
-            <input type="password" name="senha" id="idsenha" required maxlength="30" autocomplete="current-password"><br>
-        </fieldset>
-    </form>
+    <header>
+        <h1>Cadastro de Usuário</h1>
+    </header>
+    <main>
+        <form action="../ex012/forms/cadastro.php" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <br>
+                <label for="idnome">Nome completo: </label>
+                <input type="text" name="nome" id="idnome" required maxlength="30" autocomplete="name"><br>
+                <br>
+                <label for="idemail">E-mail: </label>
+                <input type="email" name="email" id="idemail" required maxlength="30" autocomplete="email"><br>
+                <br>
+                <label for="idsenha">Senha</label>
+                <input type="password" name="senha" id="idsenha" required maxlength="30" autocomplete="current-password"><br>
+                <br>
+                <label for="iddata_nascimento">Data de nascimento</label>
+                <input type="date" name="data_aniversário" id="">
+            </fieldset>
+        
+            <fieldset>
+                <legend>Perfil</legend>
+                <br>
+                <label for="idfoto">Foto de Perfil:</label>
+                <input type="file" name="foto_perfil" id="idfoto"><br>
+                <br>
+                <label for="idbio">Biogragia:</label><br>
+                <textarea name="mensagem" id="idmensagem" cols="35" rows="5" placeholder="Fale um pouco sobre você..."></textarea> <br>
+        
+                <br>
+                <label for="idgenero">Gênero</label>
+                <select>
+                    <option value="">Selecione</option>
+                    <option value="">Mascolino</option>
+                    <option value="">Feminino</option>
+                </select> <br>
+        
+                <br>
+        
+                <label for="idinteresse">Interesses:</label><br>
+                <input type="checkbox" name="musicas" id="idinteresse">
+                <label for="idinteresse">Músicas</label>
+                <input type="checkbox" name="esporte" id="idinteresse">
+                <label for="idinteresse">Esportes</label>
+                <input type="checkbox" name="tecnologia" id="idinteresse">
+                <label for="idinteresse">Tecnologia</label>
+                <input type="checkbox" name="viagem" id="idinteresse">
+                <label for="idinteresse">Viagens</label>
+            </fieldset>
+            <br>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
 </body>
 </html>
