@@ -4,7 +4,7 @@ dados_df = pd.read_excel(r'C:\Users\Tec. Inf - Eddy\OneDrive\Documentos\GitHub\E
 
 dados_df['Valor em Estoque'] = dados_df ['Preço']*dados_df['Quantidade em estoque']
 
-dados_df['Imposto (Ebaaa)'] = dados_df ['Valor em Estoque']/0.3
+dados_df['Imposto (Ebaaa)'] = dados_df ['Valor em Estoque']*0.03
 
 dados_df['Valor Final'] = dados_df['Valor em Estoque'] - dados_df['Imposto (Ebaaa)']
 
