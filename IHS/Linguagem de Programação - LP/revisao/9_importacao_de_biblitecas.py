@@ -12,7 +12,7 @@ from datetime import datetime
 import pandas as pd
 
 #por que importar bibliotecas?
-#   evita reinventar a roda
-#   acelera o desinvolvimento
-#   facilita tarefas complexas
+#   1- evita reinventar a roda
+#   2- acelera o desinvolvimento
+#   3- facilita tarefas complexas
 # permite usar ferramentas criadas por especialistas

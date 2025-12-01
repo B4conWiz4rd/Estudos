@@ -6,7 +6,8 @@ frutas = ["maça", "banana", "mamão"]
 
 #Acessando:
 
-print(frutas[0])    # maçã
+print(frutas[0])    # saida:    maçã
+
 #note que a lista sempre começa em 0
 
 #Adicionando:
