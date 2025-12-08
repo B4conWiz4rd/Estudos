@@ -4,7 +4,7 @@
 import pandas as pd
 
 # Carregar o dataset
-df = pd.read_csv('titanic.csv')
+df = pd.read_csv("data/titanic.csv")
 
 # Exibir as primeiras 5 linhas
 print(df.head())
