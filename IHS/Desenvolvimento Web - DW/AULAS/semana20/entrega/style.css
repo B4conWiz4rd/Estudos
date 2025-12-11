@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    text-align: justify;
+}
+
+a {
+    color: #0645ad;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Times New Roman', Times, serif;
+}

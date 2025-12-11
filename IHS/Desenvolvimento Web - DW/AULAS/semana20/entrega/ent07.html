@@ -17,6 +17,8 @@
 <article>
 
     <h1>Cascading Style Sheets</h1>
+    
+    <hr>
 
     <p>Cascading Style Sheets (abreviado <b>CSS</b>) é um mecanismo para adicionar estilos (cores, fontes, espaçamento, etc.) a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags &lt;style&gt;. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos. Assim, quando se quiser alterar a aparência dos documentos vinculados a este arquivo CSS,
     basta modifica-lo.</p>
@@ -36,6 +38,14 @@
         <p>Seletores podem ser combinados de outras formas também, especialmente em CSS 2.1, para alcançar uma maior especificidade e flexibilidade.</p>
         <p>Aqui está um exemplo que resume as regras acima:</p>
 
+        <pre><code>
+            <b style="color: green;">selector</b> [, <b style="color: green;">selector2</b>, ...][<b style="color: blueviolet;">:pseudo-class</b>] {
+            property: value;
+            [property2: value2;
+            ...]
+            }
+            /* comment *
+        </code></pre>
     </section>
 
     <section>
@@ -56,12 +66,12 @@
 
         <h3>Exemplos</h3>
 
-        <pre><code>
-            p {text-align: right; color: #BA2;}
-            p.minhaclasse01 { color:#ABC; }
-            .minhaclasse02 { color:#CAD; }
-            #iddomeuelemento { color:#ACD; }
-            p.minhaclasse03 .minhaclasse04 { color:#ACD; }
+        <pre><code style="color: green;">
+            p <b style="color: black;">{</b>text-align<b style="color: black;">:</b> right; color<b style="color: black;">:</b> <b style="color: gra;">#BA2</b><b style="color: black;">;}</b>
+            p<b style="color: black;">.</b><b style="color: blue;">minhaclasse01</b> <b style="color: black;">{</b> color:<b style="color: gray;">#ABC</b><b style="color: black;"></b><b style="color: black;">; }</b>
+            <b style="color: black;">.</b><b style="color: blue;">minhaclasse02</b> { color:<b style="color: gray;">#CAD</b><b style="color: black;">; }</b>
+            <b style="color: black;">#</b>iddomeuelemento <b style="color: black;">{</b> color:<b style="color: gray;">#ACD</b><b style="color: black;">; }</b>
+            p<b style="color: black;">.</b><b style="color: blue;">minhaclasse03</b> .<b style="color: blue;">minhaclasse04</b> { color:<b style="color: gray;">#ACD</b><b style="color: black;">; }</b>
         </code></pre>
 
     </section>
@@ -69,13 +79,14 @@
     <section>
         <h2>Exemplos</h2>
 
-        <pre><code>
-            /* comentário em css, semelhante aos da linguagem c */
-            body {
-                font-family: Arial, Verdana, sans-serif;
-                background-color: #FFF;
-                margin: 5px 10px;
-            }
+        <pre><code style="color: green;">
+            <b style="color: mediumaquamarine; font-style: italic;" >/* comentário em css, semelhante aos da linguagem c */</b>
+            body 
+            <b style="color: black;">{</b>
+                font-family<b style="color: black;">: Arial, Verdana,</b> sans-serif<b style="color: black;">;</b>
+                background-color: <b style="color: gray;">#FFF</b><b style="color: black;">;</b>
+                margin<b style="color: black;">:</b> <b style="color: gray;">5</b><b style="color: red;">px</b> <b style="color: gray;">10</b><b style="color: red;">px</b><b style="color: black;">;</b>
+            <b style="color: black;">}</b>
         </code></pre>
 
         <p>O código acima define fonte padrão Arial, caso não exista, substitui por Verdana, caso não exista, define qualquer fonte sans-serif. Define também a cor de fundo do corpo da página.</p>
@@ -89,59 +100,60 @@
         <h4>Exemplo de CSS aplicado em XML</h4>
         <p>Arquivo *.XML com ligação para uma folha de estilos em cascata:</p>
         <img src="img/xml_example.png" alt="Demonstração de arquivo XML rederizado.">
-        <pre><code>
-            <?xml version="1.0" encoding="UTF-8"?>
-            <?xml-stylesheet type="text/css" href="css.css"?>
-            <schedule>
-                <date>Tuesday 20 June</date>
-                <programme>
-                    <starts>6:00</starts>
-                    <title>News</title>
-                    With Michael Smith and Fiona Tolstoy.
-                    Followed by Weather with Malcolm Stott.
-                </programme>
-                <programme>
-                    <starts>6:30</starts>
-                    <title>Regional news update</title>
-                    Local news for your area.
-                </programme>
-                <programme>
-                    <starts>7:00</starts>
-                    <title>Unlikely suspect</title>
-                    Whimsical romantic crime drama starring Janet
-                    Hawthorne and Percy Trumpp.
-                </programme>
-            </schedule>
+        <pre><code><b style="color: green;">
+            &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+            &lt;?xml-stylesheet type="text/css" href="css.css"?&gt;</b>
+        <b style="color: green;">&lt;schedule&gt;</b>
+            <b style="color: green;">&lt;date&gt;</b>Tuesday 20 June<b style="color:green">&lt;/date&gt;</b>
+            <b style="color: green;">&lt;programme&gt;</b>
+                <b style="color: green;">&lt;starts&gt;</b>6:00<b style="color: green;">&lt;/starts&gt;</b>
+                <b style="color: green;">&lt;title&gt;</b>News<b style="color: green;">&lt;/title&gt;</b>
+                With Michael Smith and Fiona Tolstoy.
+                Followed by Weather with Malcolm Stott.
+                <b style="color: green;">&lt;/programme&gt;
+                &lt;programme&gt;</b>
+                <b style="color: green;">&lt;starts&gt;</b>6:30<b style="color: green;">&lt;/starts&gt;</b>
+                <b style="color: green;">&lt;title&gt;</b>Regional news update<b style="color: green;">&lt;/title&gt;</b>
+                Local news for your area.
+            <b style="color: green;">&lt;/programme&gt;
+                &lt;programme&gt;</b>
+                <b style="color: green;">&lt;starts&gt;</b>7:00<b style="color: green;">&lt;/starts&gt;</b>
+                <b style="color: green;">&lt;title&gt;</b>Unlikely suspect<b style="color: green;">&lt;/title&gt;</b>
+                Whimsical romantic crime drama starring Janet
+                Hawthorne and Percy Trumpp.
+            <b style="color: green;">&lt;/programme&gt;
+        &lt;/schedule&gt;</b>
         </code></pre>
+
 
         <h3>O arquivo *.CSS que formata o XML anterior:</h3>
 
-        <pre><code>
-            @media screen {
-                schedule {
+        <pre><code style="color: green;">
+            <b style="color: black;">@</b>media screen <b style="color: black;">{</b>
+                schedule <b style="color: black;">{</b>
+                display<b style="color: black;">:</b> block<b style="color: black;">;</b>
+                margin<b style="color: black;">:</b> <b style="color: gray;">10</b><b style="color: red;">px</b><b style="color: black;">;</b>
+                width<b style="color: black;">:</b> <b style="color: gray;">300</b><b style="color: red;">px</b><b  style="color: black;">;</b>
+            <b style="color: black;">}</b>
+            date <b style="color: black;">{</b>
+                display<b style="color: black;">:</b> block<b style="color: black;">;</b>
+                padding<b style="color: black;">:</b> 0.3em<b style="color: black;">;</b>
+                font<b style="color: black;">:</b> bold x-large sans-serif<b style="color: black;">;</b>
+                color<b style="color: black;">:</b> white<b style="color: black;">;</b>
+                background-color: #C6C<b style="color: black;">;</b>
+            <b style="color: black;">}</b>
+            programme <b style="color: black;">{</b>
                 display: block;
-                margin: 10px;
-                width: 300px;
-            }
-            date {
-                display: block;
-                padding: 0.3em;
-                font: bold x-large sans-serif;
-                color: white;
-                background-color: #C6C;
-            }
-            programme {
-                display: block;
-                font: normal medium sans-serif;
-            }
+                font<b style="color: black;">:</b> normal medium sans-serif<b style="color: black;">;</b>
+            <b style="color: black;">}</b>
             programme > * { /* All children of programme elements */
-                font-weight: bold;
-                font-size: large;
-            }
-            title {
-                font-style: italic;
-            }
-        }
+                font-weight<b style="color: black;">:</b> bold<b style="color: black;">;</b>
+                font-size<b style="color: black;">:</b> large<b style="color: black;">;</b>
+            <b style="color: black;">}</b>
+            title <b style="color: black;">{</b>
+                font-style<b style="color: black;">:</b> italic<b style="color: black;">;</b>
+            <b style="color: black;">}</b>
+        <b style="color: black;">}</b>
         </code></pre>
 
         <h3>CSS e JavaScript</h3>
