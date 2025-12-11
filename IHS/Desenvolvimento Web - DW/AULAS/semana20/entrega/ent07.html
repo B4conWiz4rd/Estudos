@@ -100,7 +100,7 @@
         <h4>Exemplo de CSS aplicado em XML</h4>
         <p>Arquivo *.XML com ligação para uma folha de estilos em cascata:</p>
         <img src="img/xml_example.png" alt="Demonstração de arquivo XML rederizado.">
-        <pre><code><b style="color: green;">
+        <pre><code><b style="color: orange;">
             &lt;?xml version="1.0" encoding="UTF-8"?&gt;
             &lt;?xml-stylesheet type="text/css" href="css.css"?&gt;</b>
         <b style="color: green;">&lt;schedule&gt;</b>
@@ -162,42 +162,42 @@
         <h3>CSS e JavaScript</h3>
         <p>Pop-up não-bloqueável</p>
 
-        <pre><code>
-            &lt;html&gt;
-            &lt;head&gt;
-                &lt;style type="text/css"&gt;
-                #popup {
-                    position: absolute;
-                    top: 30%;
-                    left: 30%;
-                    width: 300px;
-                    height: 150px;
-                    padding: 20px 20px 20px 20px;
-                    border-width: 2px;
-                    border-style: solid;
-                    background: #ffffa0;
-                    display: none;
-                }
-                &lt;/style&gt;
-                &lt;script type="text/javascript"&gt;
-                function abrir() {
-                    document.getElementById('popup').style.display = 'block';
-                    setTimeout("fechar()", 3000);
-                }
-                function fechar() {
-                    document.getElementById('popup').style.display = 'none';
-                }
-                &lt;/script&gt;
-            &lt;/head&gt;
-            &lt;body onload="abrir()"&gt;
-            &lt;div id="popup" class="popup"&gt;
-                Esse é um exemplo de popup utilizando o elemento &lt;code&gt;div&lt;/code&gt;. Dessa maneira esse pop-up não será bloqueado.
-                &lt;small&gt;&lt;a href="javascript: fechar();"&gt;[X]&lt;/a&gt;&lt;/small&gt;
-            &lt;/div&gt;
-            &lt;a href="javascript: abrir();"&gt;Abrir pop-up&lt;/a&gt;
-            &lt;a href="javascript: fechar();"&gt;Fechar pop-up&lt;/a&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
+        <pre><code style="color: green;">
+            <b style="color: black;">&lt;</b>html<b style="color: black;">&gt;</b>
+            <b style="color: black;">&lt;</b>head<b style="color: black;">&gt;</b>
+                <b style="color: black;">&lt;</b>style <b style="color: burlywood;">type=</b><b style="color: red;">"text/css"</b><b style="color: black;">&gt;</b>
+                <b style="color: black;">#</b> popup <b style="color: black;">{</b>
+                    position<b style="color: black;">:</b> absolute<b style="color: black;">;</b>
+                    top<b style="color: black;">:</b> <b style="color: gray;">30</b><b style="color: red;">%</b><b style="color: black;">;</b>
+                    left<b style="color: black;">:</b> <b style="color: gray;">30</b><b style="color: red;">%</b><b style="color: black;">;</b>
+                    width<b style="color: black;">:</b> <b style="color: gray;">300</b><b style="color: red;">px</b><b style="color: black;">;</b>
+                    height<b style="color: black;">:</b> <b style="color: gray;">150</b><b style="color: red;">px</b><b style="color: black;">;</b>
+                    padding<b style="color: black;">:</b> <b style="color: gray;">20</b><b style="color: red;">px</b> <b style="color: gray;">20</b><b style="color: red;">px</b> <b style="color: gray;">20</b><b style="color: red;">px</b> <b style="color: gray;">20</b><b style="color: red;">px</b><b style="color: black;">;</b>
+                    border-width<b style="color: black;">:</b> <b style="color: gray;">2</b><b style="color: red;">px</b><b style="color: black;">;</b>
+                    border-style<b style="color: black;">:</b> solid<b style="color: black;">;</b>
+                    background<b style="color: black;">:</b> <b style="color: gray;">#ffffa0</b><b style="color: black;">;</b>
+                    display<b style="color: black;">:</b> none<b style="color: black;">;</b>
+                <b style="color: black;">}</b>
+                <b style="color: black;">&lt;/</b>style<b style="color: black;">&gt;</b>
+                <b style="color: black;">&lt;</b>script <b style="color: burlywood;">type=</b><b style="color: red;">"text/javascript"</b><b style="color: black;">&gt;</b>
+                function <b style="color: black;">abrir() {</b>
+                    document<b style="color: black;">.getElementById(</b><b style="color: red;">'popup'</b><b style="color: black;">).style.display</b> <b style="color: burlywood;">=</b> <b style="color: red;">'block'</b><b style="color: black;">;</b>
+                    <b style="color: black;">setTimeout (</b><b style="color: red;">"fechar()"</b><b style="color: black;">,</b> <b style="color: gray;">3000</b><b style="color: black;">);</b>
+                <b style="color: black;">}</b>
+                function <b style="color: black;">fechar() {</b>
+                    document<b style="color: black;">.getElementById(</b><b style="color: red;">'popup'</b><b>).style.display</b> <b style="color: burlywood;">=</b> <b style="width: red;">'none'</b><b style="color: black;">;</b>
+                <b style="color: black;">}</b>
+                <b style="color: black;">&lt;</b>/script<b style="color: black;">&gt;</b>
+            <b style="color: black;">&lt;</b>/head<b style="color: black;">&gt;</b>
+            <b style="color: black;">&lt;</b>body onload="abrir()"<b style="color: black;">&gt;</b>
+            <b style="color: black;">&lt;</b>div id="popup" class="popup"<b style="color: black;">&gt;</b>
+                <b style="color: black;">Esse é um exemplo de popup utilizando o elemento</b> <b style="color: black;">&lt;</b>code<b style="color: black;">&gt;div&lt;/</b>code<b style="color: black;">&gt;. Dessa maneira esse pop-up não será bloqueado.</b>
+                <b style="color: black;">&lt;</b>;small<b style="color: black;">&gt;</b><b style="color: black;">&lt;</b>a <b style="color: burlywood;">href=</b><b style="color: red;">"javascript: fechar();"</b><b style="color: black;">&gt;[X]&lt;/</b>a<b style="color: black;">&gt;</b><b style="color: black;">&lt;</b>/small<b style="color: black;">&gt;</b>
+            <b style="color: black;">&lt;</b>/div<b style="color: black;">&gt;</b>
+            <b style="color: black;">&lt;</b>a<b style="color: burlywood;"> href=</b><b style="color: red;">"javascript: abrir();"</b><b style="color: black;">&gt;Abrir pop-up&lt;/</b>a<b style="color: black;">&gt;</b>
+            <b style="color: black;">&lt;</b>a<b style="color: burlywood;"> href=</b><b style="color: red;">"javascript: fechar();"</b><b style="color: black;">&gt;Fechar pop-up&lt;/</b>a<b style="color: black;">&gt;</b>
+            <b style="color: black;">&lt;/</b>body<b style="color: black;">&gt;</b>
+            <b style="color: black;">&lt;/</b>html<b style="color: black;">&gt;</b>
         </code></pre>
         
 
