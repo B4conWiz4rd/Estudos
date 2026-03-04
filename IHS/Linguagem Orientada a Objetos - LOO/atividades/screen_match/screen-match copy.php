@@ -16,15 +16,8 @@
     };
 
     $somaNotas = 0;
-
-    //foreach ($notas as $nota) {
-    //    $soma += $nota;
-    //}
-
-    //$soma = array_sum
-
     for ($i = 0; count($notas); $i++){
-        $somaNotas += $notas[$i]; 
+        $somaNotas =+ $notas[$i]; 
     }; 
 
     $notaFilme = $somaNotas / $quantidadeNotas;
