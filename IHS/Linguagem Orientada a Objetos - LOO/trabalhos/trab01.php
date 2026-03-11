@@ -5,7 +5,11 @@
     echo ("====== Banco Master Sistems ======\n");
     echo ("Olá $usrNome\n");
     echo ("Saldo: $valorSaldo\n");
-    echo ("==================================\n");
+
+
+
+    do {
+    echo ("\n\n==================================\n");
     echo ("1 - Exbir Saldo Atual\n");
     echo ("2 - Sacar Saldo\n");
     echo ("3 - Depositar\n");
@@ -17,22 +21,23 @@
     switch ($opcao) {
         case 1:
             echo ("Saldo atual: $valorSaldo\n");
+            break;
 
         case 2:
-            $valorSaque;
             echo ("Digite o valor do saque\n");
             $valorSaque = (float)fgets(STDIN);
-            if ($valorSaque>$valorSaldo){
+
+            if ($valorSaque > $valorSaldo){
                 echo ("ERRO! Valor de saque a cima do Saldo.\n");
             }
             else {
-                $valorSaque -= $valorSaldo;
+                $valorSaldo -= $valorSaque;
                 echo ("Saque efetuado com sucesso!\n");
                 echo ("Valor atual: $valorSaldo\n");
             }
+            break;
 
         case 3:
-            $valorDeposito;
             echo ("Digite o valor de Depósito.\n");
             $valorDeposito = (float)fgets(STDIN);
             if ($valorDeposito < 0) {
@@ -43,10 +48,13 @@
                 echo ("O Valor foi depositado com sucesso!\n");
                 echo ("Valor atual: $valorSaldo\n");
             }
+        break;
 
         case 4:
             echo ("Adeus!\n");
-
+        break;
+    
         default:
             echo ("Opção inválida\n");
-}
+    } 
+}while ($opcao != 4);

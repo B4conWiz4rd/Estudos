@@ -23,9 +23,12 @@ switch (dificuldade) {
         tentativas = 1;
         break;
 
+    default :
+        alert (`ERRO! A opção selecionada é inválida.`);
+
 };
 
-let numeroSecreto = 9;
+let numeroSecreto = 9 ;
 let palpite;
 let gameover = false;
 
