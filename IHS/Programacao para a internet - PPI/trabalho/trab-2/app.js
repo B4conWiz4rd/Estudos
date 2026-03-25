@@ -1,5 +1,9 @@
-let nome;
-let idade;
-let numeroVendas;
-let saldoDisponivel;
-let valores;
+function validarNome(){
+
+    let nome;
+    let idade;
+    let numeroVendas;
+    let saldoDisponivel;
+    let valores;
+
+}

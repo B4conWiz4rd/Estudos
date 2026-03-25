@@ -7,9 +7,31 @@
 </head>
 <body>
     <h1>Exercicio 2</h1>
-    <input type="text" name="nome" id="idnome">
+    <div>
+        <label for="idnome">Nome</label>
+        <input type="text" name="nome" id="idnome">
+    </div>
 
-    <input type="submit" value="Enviar">
+    <div>
+        <label for="ididade;">Idade</label>
+        <input type="number" name="idade" id="ididade">
+    </div>
+
+    <div>
+        <label for="idqtdvendas">Quantidades</label>
+        <input type="number" name="qtdVendas" id="idqtdvendas">
+    </div>
+
+    <div>
+        <label for="idsaldodisp">Saldo Disponível:</label>
+        <p class="saldo_disp"></p>
+    </div>
+
+    <div>
+
+    </div>
+    
+    <button onclick="validarNome()" class="enviar_dados">Validar</button>
 
     <script src="app.js" defer></script>
 </body>
