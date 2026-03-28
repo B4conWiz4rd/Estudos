@@ -1,15 +1,15 @@
 function comprar(){
 
-let tipo = document.getElementById("tipo-ingresso").value;
-let qtd = parseInt(document.getElementById("qtd").value);
+    let tipo = document.getElementById("tipo-ingresso").value;
+    let qtd = parseInt(document.getElementById("qtd").value);
 
-if (tipo == "pista"){
-    comprar_pista(qtd);
-}else if (tipo == "superior"){
-    comprar_superior (qtd);
-}else{
-    comprar_inferior (qtd);
-}
+    if (tipo == "pista"){
+        comprar_pista(qtd);
+    }else if (tipo == "superior"){
+        comprar_superior (qtd);
+    }else{
+        comprar_inferior (qtd);
+    }
 
 }
 function comprar_pista(qtd){
