@@ -1,2 +1,4 @@
 //alert
-alert(`Boas Vindas ao site!`);
+function acao(){
+    alert(`Boas Vindas ao site!`);
+}
