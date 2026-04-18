@@ -1,0 +1,42 @@
+:root {
+    /* =========================================
+       CORES PRINCIPAIS (Foco e Criatividade)
+       ========================================= */
+    /* Roxo Principal - Indicado para: Background principal da página, botões de Call-to-Action (CTA) 
+       e elementos que precisam do máximo de destaque e identidade da ByteCat. */
+    --color-primary: #6C63FF;
+    /* Roxo Claro - Indicado para: Efeito de hover (quando o mouse passa por cima) em botões, 
+       ícones ativos, ou textos de destaque em áreas escuras. Traz leveza. */
+    --color-primary-light: #8B7BFF;
+    /* Roxo Escuro - Indicado para: Estados de clique (active), sombras profundas (box-shadow) 
+       para dar precisão técnica e profundidade aos cards, e bordas de elementos focados. */
+    --color-primary-dark: #4B45B8;
+    /* =========================================
+       CORES SECUNDÁRIAS (Calmaria e Leveza)
+       ========================================= */
+    /* Lilás Suave - Indicado para: Bordas de inputs (caixas de texto), backgrounds de tags/badges, 
+       linhas divisórias ou elementos que precisam de destaque sutil sem pesar o layout. */
+    --color-secondary-lilac: #C9C6FF;
+    /* Branco Suave - Indicado para: Texto principal sobre o background roxo (evita o branco puro #FFF 
+       que cansa a vista, trazendo calmaria à leitura) e fundo de cards internos. */
+    --color-secondary-white: #F5F5F5;
+
+    /* =========================================
+       ⚙ CORES NEUTRAS (Precisão Técnica)
+       ========================================= */
+    /* Cinza Escuro (Tech) - Indicado para: Textos de parágrafos longos em áreas claras, 
+       backgrounds de blocos de código, rodapés e áreas que exigem alta legibilidade técnica. */
+    --color-neutral-dark: #1F1F1F;
+    /* =========================================
+       GRADIENTES (Inteligência e Fluxo)
+       ========================================= */
+    /* Gradiente Principal - Indicado para: Cabeçalho (Header) fixo, fundo de seções Hero 
+       (a primeira tela que o usuário vê) ou preenchimento de botões primários modernos. */
+    --gradient-main: linear-gradient(135deg, #6C63FF, #8B7BFF);
+    /* Gradiente Profundo - Indicado para: Background de Sidebars (menus laterais), 
+       áreas de "Deep Tech" (como painéis de dados ou terminais) e seções de rodapé. */
+    --gradient-deep: linear-gradient(135deg, #4B45B8, #6C63FF);
+    /* Gradiente Glow - Indicado para: Efeito de brilho (glow) atrás de elementos flutuantes, 
+       efeito de spotlight no fundo da página, ou máscara de overlays. */
+    --gradient-glow: radial-gradient(circle, #8B7BFF, #6C63FF, #4B45B8);
+}
