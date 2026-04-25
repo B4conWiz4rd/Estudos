@@ -17,10 +17,10 @@ function incluidoNoPlano(bool $plano, int $ano): bool{
     return $plano || $ano <= 2000;
 }
 
-function criarFilme(string $nome, int $anoLancamento, float $nota, sting $genero): array{
+function criarFilme(string $nome, int $anoLancamento, float $nota, string $genero): array{
     return [
         'nome' => $nome,
-        'ano' => $ano,
+        'ano' => $anoLancamento,
         'nota' => $nota,
         'genero' => $genero
     ];
