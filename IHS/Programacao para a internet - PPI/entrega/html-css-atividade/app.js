@@ -55,13 +55,52 @@ function ex007() {
 
 function ex008() {
   let definirNumero = parseInt(document.querySelector('#inputEx08').value);
-  function multiplica() {
-    let dobro = definirNumero * 2
-  }
-  let mostraResultado = document.querySelector('#resultado-dobro--ex02');
-  mostraResultado.innerHTML = multiplica()
+  let dobro = definirNumero*2
+  let resultadoEx8 = document.querySelector('#outputEx08')
+  resultadoEx8.innerHTML = dobro
 }
 
 function ex009() {
+  let ex09NumA = parseInt(document.querySelector('#inputEx09-numA').value)
+  let ex09NumB = parseInt(document.querySelector('#inputEx09-numB').value)
+  let ex09NumC = parseInt(document.querySelector('#inputEx09-numC').value)
+  
+  let ex09media = (ex09NumA+ex09NumB+ex09NumC)/3
+  
+  let resultadoEx9 = document.querySelector('#outputEx09')
+  resultadoEx9.innerHTML = ex09media
+}
+
+function ex010() {
+  let ex10NumA = parseInt(document.querySelector('#inputEx10-numA').value)
+  let ex10NumB = parseInt(document.querySelector('#inputEx10-numB').value)
+  let resultadoEx10 = document.querySelector('#outputEx10')
+
+  if (ex10NumA > ex10NumB) {
+    resultadoEx10.innerHTML = `O número ${ex10NumA} é MAIOR que ${ex10NumB}`
+  }else if (ex10NumA == ex10NumB) {
+    resultadoEx10.innerHTML = `Os números ${ex10NumA} e ${ex10NumB} são IGUAIS`
+
+  }else {
+    resultadoEx10.innerHTML = `O número ${ex10NumA} é MENOR que ${ex10NumB}`
+  }
+}
+
+function ex011() {
+  let ex11NumA = parseInt(document.querySelector('#inputEx11-numA').value)
+  let resultadoEx11 = document.querySelector('#outputEx11')
+
+  resultadoEx11.innerHTML = ex11NumA**2
+}
+
+function ex012() {
+  let ex12NumA = parseInt(document.querySelector('#inputEx12-numA').value)
+  
+  for (let i = ex12NumA; i < 1; i--) {
+    alert(i)
+  }
+}
+
+function ex013() {
   
 }
