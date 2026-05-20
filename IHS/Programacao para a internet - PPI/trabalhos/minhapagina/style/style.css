@@ -40,3 +40,11 @@
        efeito de spotlight no fundo da página, ou máscara de overlays. */
     --gradient-glow: radial-gradient(circle, #8B7BFF, #6C63FF, #4B45B8);
 }
+
+.link-default {
+   color: var(--color-secondary-lilac);
+}
+
+.overlay-text:hover {
+   color: var(--color-primary-light);
+} 
