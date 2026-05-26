@@ -1,13 +1,13 @@
 function calcularFatorial() {
-  
+
   let resultado = 1;
   let numero = 5;
-  
+
   for (let i = numero; i >= 1; i--) {
     resultado *= i;
   }
-  
-  alert (resultado);
+
+  alert(resultado);
 }
 
 function ex001() {
@@ -24,20 +24,20 @@ function ex003() {
 }
 
 function ex004() {
-  let nomeCidade = prompt ('Qual o nome da sua cidade?')
-  alert (`Estivem em ${nomeCidade} e lembrei de você!`)
+  let nomeCidade = prompt('Qual o nome da sua cidade?')
+  alert(`Estivem em ${nomeCidade} e lembrei de você!`)
 }
 
 function ex005() {
-  alert ('Calculadora de somatório')
-  let primeiroNum = parseInt(prompt ('O primeiro número natural (ex: 1, 2, 30)'))
-  let segundoNum = parseInt(prompt ('O segundo número natural (ex: 1, 2, 30)'))
+  alert('Calculadora de somatório')
+  let primeiroNum = parseInt(prompt('O primeiro número natural (ex: 1, 2, 30)'))
+  let segundoNum = parseInt(prompt('O segundo número natural (ex: 1, 2, 30)'))
   let resultado = primeiroNum + segundoNum
   alert(`A soma de ${primeiroNum} mais ${segundoNum} resulta em ${primeiroNum + segundoNum}.`)
 }
 
 function ex006() {
-  function digaOla(){
+  function digaOla() {
     return console.log('Olá Mundo')
   }
 
@@ -55,7 +55,7 @@ function ex007() {
 
 function ex008() {
   let definirNumero = parseInt(document.querySelector('#inputEx08').value);
-  let dobro = definirNumero*2
+  let dobro = definirNumero * 2
   let resultadoEx8 = document.querySelector('#outputEx08')
   resultadoEx8.innerHTML = dobro
 }
@@ -64,9 +64,9 @@ function ex009() {
   let ex09NumA = parseInt(document.querySelector('#inputEx09-numA').value)
   let ex09NumB = parseInt(document.querySelector('#inputEx09-numB').value)
   let ex09NumC = parseInt(document.querySelector('#inputEx09-numC').value)
-  
-  let ex09media = (ex09NumA+ex09NumB+ex09NumC)/3
-  
+
+  let ex09media = (ex09NumA + ex09NumB + ex09NumC) / 3
+
   let resultadoEx9 = document.querySelector('#outputEx09')
   resultadoEx9.innerHTML = ex09media
 }
@@ -78,10 +78,10 @@ function ex010() {
 
   if (ex10NumA > ex10NumB) {
     resultadoEx10.innerHTML = `O número ${ex10NumA} é MAIOR que ${ex10NumB}`
-  }else if (ex10NumA == ex10NumB) {
+  } else if (ex10NumA == ex10NumB) {
     resultadoEx10.innerHTML = `Os números ${ex10NumA} e ${ex10NumB} são IGUAIS`
 
-  }else {
+  } else {
     resultadoEx10.innerHTML = `O número ${ex10NumA} é MENOR que ${ex10NumB}`
   }
 }
@@ -90,17 +90,49 @@ function ex011() {
   let ex11NumA = parseInt(document.querySelector('#inputEx11-numA').value)
   let resultadoEx11 = document.querySelector('#outputEx11')
 
-  resultadoEx11.innerHTML = ex11NumA**2
+  resultadoEx11.innerHTML = ex11NumA ** 2
 }
 
 function ex012() {
   let ex12NumA = parseInt(document.querySelector('#inputEx12-numA').value)
-  
-  for (let i = ex12NumA; i < 1; i--) {
-    alert(i)
+  let resultadoEx12 = document.querySelector('#outputEx12')
+
+  let resultado = 1
+  for (let i = 1; i <= numero; i++) {
+    resultado *= i;
   }
+
 }
 
 function ex013() {
-  
+  let ex13NumA = parseFloat(document.querySelector('#inputEx13-numA').value)
+  let ex13NumB = parseFloat(document.querySelector('#inputEx13-numB').value)
+
+  let resultadoIMC = ex13NumA / (ex13NumB * ex13NumB)
+
+  let resultadoEx13 = document.querySelector('#outputEx13')
+
+  resultadoEx13.innerHTML = resultadoIMC
+
+}
+
+function ex014() {
+  let ex14Num = parseFloat(document.querySelector('#inputEx14-numA').value)
+  let resultadoEx14 = document.querySelector('#outputEx14')
+
+  resultadoEx14.innerHTML = ex13Num * 4.80
+}
+
+function ex015() {
+  //largura
+  let ex15NumA = parseFloat(document.querySelector('#inputEx15-numA').value)
+  //altura
+  let ex15NumB = parseFloat(document.querySelector('#inputEx15-numB').value)
+
+  let resultadoEx15 = document.querySelector('#outputEx15')
+
+  let area = ex15NumA * ex15NumB;
+  let perimetro = 2 * (ex15NumA + ex15NumB);
+
+  resultadoEx15.innerHTML = `Área ${area}, Perimetro ${perimetro}`
 }
