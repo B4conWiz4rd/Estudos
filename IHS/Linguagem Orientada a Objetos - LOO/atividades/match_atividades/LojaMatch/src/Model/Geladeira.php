@@ -9,6 +9,7 @@
                 parent::__construct($nome, $precoBase, $catergoriaEletronico, );
             }
 
+            #[Override]
             public function calcularTaxaEnvio():float{
                 return $this->qtdMesesGarantia * 50.00;
             }

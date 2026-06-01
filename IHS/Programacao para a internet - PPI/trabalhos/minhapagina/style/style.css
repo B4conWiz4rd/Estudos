@@ -41,6 +41,10 @@
     --gradient-glow: radial-gradient(circle, #8B7BFF, #6C63FF, #4B45B8);
 }
 
+body {
+   background-color: var(--color-primary);
+}
+
 .link-default {
    color: var(--color-secondary-lilac);
 }
@@ -48,3 +52,7 @@
 .overlay-text:hover {
    color: var(--color-primary-light);
 } 
+
+p {
+   color: var(--color-neutral-dark)
+}
