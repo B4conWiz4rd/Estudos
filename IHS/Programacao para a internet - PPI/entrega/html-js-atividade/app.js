@@ -1,14 +1,4 @@
-function calcularFatorial() {
-
-  let resultado = 1;
-  let numero = 5;
-
-  for (let i = numero; i >= 1; i--) {
-    resultado *= i;
-  }
-
-  alert(resultado);
-}
+//=====Interação com HTML=====
 
 function ex001() {
   let titulo = document.querySelector('h1');
@@ -35,6 +25,8 @@ function ex005() {
   let resultado = primeiroNum + segundoNum
   alert(`A soma de ${primeiroNum} mais ${segundoNum} resulta em ${primeiroNum + segundoNum}.`)
 }
+
+//=====Funcões=====
 
 function ex006() {
   function digaOla() {
@@ -94,26 +86,28 @@ function ex011() {
 }
 
 function ex012() {
-  let ex12NumA = parseInt(document.querySelector('#inputEx12-numA').value)
+  let ex12NumA = parseFloat(document.querySelector('#inputEx12-numA').value)
+  let ex12NumB = parseFloat(document.querySelector('#inputEx12-numB').value)
+
+  let resultadoIMC = ex12NumA / (ex12NumB * ex12NumB)
+
   let resultadoEx12 = document.querySelector('#outputEx12')
 
-  let resultado = 1
-  for (let i = 1; i <= numero; i++) {
-    resultado *= i;
-  }
+  resultadoEx12.innerHTML = resultadoIMC
 
 }
 
 function ex013() {
-  let ex13NumA = parseFloat(document.querySelector('#inputEx13-numA').value)
-  let ex13NumB = parseFloat(document.querySelector('#inputEx13-numB').value)
-
-  let resultadoIMC = ex13NumA / (ex13NumB * ex13NumB)
-
+  let ex13NumA = parseInt(document.querySelector('#inputEx13-numA').value)
   let resultadoEx13 = document.querySelector('#outputEx13')
 
-  resultadoEx13.innerHTML = resultadoIMC
+  let resultado = 1
 
+  for (let i = 1; i <= ex13NumA; i++) {
+    resultado *= i;
+  }
+
+  resultadoEx13.innerHTML = resultado
 }
 
 function ex014() {
@@ -136,3 +130,28 @@ function ex015() {
 
   resultadoEx15.innerHTML = `Área ${area}, Perimetro ${perimetro}`
 }
+
+function ex016() {
+  let pi = 3.14;
+  //raio
+  let ex16NumA = parseFloat(document.querySelector('#inputEx16-numA').value)
+  let resultadoEx16 = document.querySelector('#outputEx16')
+  area = pi * (ex16NumA ** 2);
+  perimetro = 2 * pi * ex16NumA;
+  resultadoEx16.innerHTML = `Área ${area} m², Perimetro ${perimetro}m.`
+}
+
+function ex017() {
+  let ex17NumA = parseInt(document.querySelector('#inputEx17-numA').value)
+  let resultadoEx17 = document.querySelector('#outputEx17')
+
+  let ex17resultado = "<br>";
+
+   for (let i = 1; i <= 10; i++) {
+    let ex17calculo = ex17NumA * i;
+    ex17resultado += ex17NumA + "x" + i + "=" + ex17calculo + "<br>"
+  }
+  resultadoEx17.innerHTML = ex17resultado
+}
+
+//=====Arrays e Funções=====
