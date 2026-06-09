@@ -1,0 +1,41 @@
+CPF,Nome,Sobrenome,Telefone,Rua,Número,Complemento,Bairro,CEP,Cidade,Cod. Cidade,Estado,UF,Item Comprado,Nº Pedido,Pgto,Data Compra,Cód. Item,Preço Unit.,Qtd,Preço Total
+111.111.111-11,João,Silva,(11) 98888-1111,Rua das Flores,123,Apto 1,Centro,01000-000,São Paulo,3550308,São Paulo,SP,Notebook,1001,Cartão,2026-05-20,2045,3500.00,1,3500.00
+222.222.222-22,Maria,Oliveira,(21) 97777-2222,Av. Brasil,456,Casa,Copacabana,22000-000,Rio de Janeiro,3304557,Rio de Janeiro,RJ,Mouse Sem Fio,1002,PIX,2026-05-21,3541,150.00,2,300.00
+333.333.333-33,Carlos,Santos,(31) 96666-3333,Rua Afonso Pena,789,Lote 2,Savassi,30000-000,Belo Horizonte,3106200,Minas Gerais,MG,Teclado Mec.,1003,Boleto,2026-05-22,1125,450.00,1,450.00
+444.444.444-44,Ana,Costa,(41) 95555-4444,Rua XV de Novembro,101,Apto 54,Batel,80000-000,Curitiba,4106902,Paraná,PR,"Monitor 24""",1004,Cartão,2026-05-22,8774,800.00,2,1600.00
+555.555.555-55,Pedro,Almeida,(51) 94444-5555,Av. Borges de Medeiros,202,Sala 10,Moinhos de Vento,90000-000,Porto Alegre,4314902,Rio Grande do Sul,RS,Cadeira Gamer,1005,PIX,2026-05-23,2361,1200.00,1,1200.00
+666.666.666-66,Julia,Ferreira,(61) 93333-6666,Av. W3 Sul,303,Bloco A,Asa Sul,70000-000,Brasília,5300108,Distrito Federal,DF,Fone de Ouvido,1006,Cartão,2026-05-24,5542,250.00,1,250.00
+777.777.777-77,Lucas,Rocha,(71) 92222-7777,Av. Oceanica,404,Apto 202,Barra,40000-000,Salvador,2927408,Bahia,BA,Webcam HD,1007,PIX,2026-05-24,6673,350.00,1,350.00
+888.888.888-88,Beatriz,Gomes,(81) 91111-8888,Rua da Aurora,505,Casa 3,Boa Vista,50000-000,Recife,2611606,Pernambuco,PE,Suporte Articulado,1008,Boleto,2026-05-25,4412,180.00,2,360.00
+999.999.999-99,André,Ribeiro,(85) 90000-9999,Av. Beira Mar,606,Apto 1201,Meireles,60000-000,Fortaleza,2304400,Ceará,CE,Roteador Wi-Fi,1009,Cartão,2026-05-25,9921,400.00,1,400.00
+123.456.789-00,Camila,Martins,(92) 98765-4321,Av. Djalma Batista,707,Sala 4,Flores,69000-000,Manaus,1302603,Amazonas,AM,HD Externo 1TB,1010,PIX,2026-05-26,7734,350.00,1,350.00
+234.567.890-11,Thiago,Lima,(19) 97654-3210,Rua Treze de Maio,808,Apto 12,Centro,13000-000,Campinas,3509502,São Paulo,SP,Mousepad Gamer,1011,Cartão,2026-05-26,1212,100.00,2,200.00
+345.678.901-22,Larissa,Teixeira,(12) 96543-2109,Av. Nove de Julho,909,Casa,Vila Adyana,12200-000,São José dos Campos,3549904,São Paulo,SP,Hub USB-C,1012,PIX,2026-05-27,2323,120.00,1,120.00
+456.789.012-33,Gabriel,Mendes,(16) 95432-1098,Rua General Osório,111,Apto 34,Centro,14000-000,Ribeirão Preto,3543402,São Paulo,SP,Microfone Condensador,1013,Boleto,2026-05-27,3434,600.00,1,600.00
+567.890.123-44,Amanda,Freitas,(13) 94321-0987,Av. Ana Costa,222,Apto 81,Gonzaga,11000-000,Santos,3548500,São Paulo,SP,Caixa de Som Bluetooth,1014,Cartão,2026-05-28,4545,250.00,2,500.00
+678.901.234-55,Felipe,Barbosa,(21) 93210-9876,Rua Voluntários da Pátria,333,Apto 502,Botafogo,22200-000,Rio de Janeiro,3304557,Rio de Janeiro,RJ,Carregador Portátil,1015,PIX,2026-05-28,5656,150.00,1,150.00
+789.012.345-66,Bruna,Cardoso,(24) 92109-8765,Rua do Imperador,444,Casa,Centro,25600-000,Petrópolis,3303906,Rio de Janeiro,RJ,Cabo HDMI 2m,1016,Cartão,2026-05-29,6767,40.00,3,120.00
+890.123.456-77,Rodrigo,Araújo,(31) 91098-7654,Av. Cristiano Machado,555,Sala 301,Cidade Nova,31160-000,Belo Horizonte,3106200,Minas Gerais,MG,Filtro de Linha,1017,Boleto,2026-05-29,7878,80.00,2,160.00
+901.234.567-88,Fernanda,Melo,(32) 90987-6543,Rua Halfeld,666,Apto 402,Centro,36000-000,Juiz de Fora,3136702,Minas Gerais,MG,Mesa Digitalizadora,1018,Cartão,2026-05-30,8989,500.00,1,500.00
+012.345.678-99,Ricardo,Nunes,(34) 99876-5432,Av. Afonso Pena,777,Casa,Centro,38400-000,Uberlândia,3170206,Minas Gerais,MG,Adaptador Bluetooth,1019,PIX,2026-05-30,9090,50.00,1,50.00
+135.792.468-00,Camila,Carvalho,(41) 98765-1234,Av. Sete de Setembro,888,Apto 15,Batista,80230-000,Curitiba,4106902,Paraná,PR,Estabilizador,1020,Cartão,2026-05-31,1112,200.00,1,200.00
+246.801.357-11,Bruno,Pinto,(43) 97654-2345,Rua Sergipe,999,Lote 5,Centro,86000-000,Londrina,4113700,Paraná,PR,Memória RAM 8GB,1021,PIX,2026-05-31,2223,250.00,2,500.00
+357.913.579-22,Mariana,Dias,(47) 96543-3456,Rua XV de Novembro,123,Apto 3,Centro,89200-000,Joinville,4209102,Santa Catarina,SC,SSD 480GB,1022,Boleto,2026-06-01,3334,300.00,1,300.00
+468.024.680-33,Gustavo,Rocha,(48) 95432-4567,Av. Beira Mar Norte,234,Apto 101,Centro,88000-000,Florianópolis,4205407,Santa Catarina,SC,Cooler Processador,1023,Cartão,2026-06-01,4445,150.00,1,150.00
+579.135.791-44,Sofia,Moreira,(51) 94321-5678,Av. Ipiranga,345,Sala 802,Partenon,90650-000,Porto Alegre,4314902,Rio Grande do Sul,RS,Pasta Térmica,1024,PIX,2026-06-02,5556,40.00,2,80.00
+690.246.802-55,Daniel,Vieira,(54) 93210-6789,Av. Júlio de Castilhos,456,Casa,Centro,95000-000,Caxias do Sul,4305108,Rio Grande do Sul,RS,Placa de Vídeo,1025,Cartão,2026-06-02,6667,1800.00,1,1800.00
+801.357.913-66,Beatriz,Cunha,(61) 92109-7890,Eixo Monumental,567,Sala 12,Asa Monumental,70070-000,Brasília,5300108,Distrito Federal,DF,Fonte ATX 500W,1026,Boleto,2026-06-03,7778,350.00,1,350.00
+912.468.024-77,Leonardo,Cardoso,(62) 91098-8901,Av. Anhanguera,678,Apto 44,Setor Central,74000-000,Goiânia,5208707,Goiás,GO,Gabinete Gamer,1027,Cartão,2026-06-03,8889,400.00,1,400.00
+023.579.135-88,Aline,Teixeira,(65) 90987-9012,Av. Historiador Rubens de Mendonça,789,Sala 5,Alvorada,78000-000,Cuiabá,5103403,Mato Grosso,MT,Placa-Mãe,1028,PIX,2026-06-04,9990,700.00,1,700.00
+134.680.246-99,Marcelo,Souza,(67) 99876-0123,Av. Afonso Pena,890,Casa,Centro,79000-000,Campo Grande,5002704,Mato Grosso do Sul,MS,Processador i5,1029,Cartão,2026-06-04,1221,1100.00,1,1100.00
+245.791.357-00,Priscila,Borges,(71) 98765-9876,Av. Tancredo Neves,901,Apto 902,Caminho das Árvores,41820-021,Salvador,2927408,Bahia,BA,Teclado de Membrana,1030,PIX,2026-06-05,2332,120.00,1,120.00
+356.902.468-11,Eduardo,Nascimento,(79) 97654-8765,Av. Beira Mar,112,Apto 301,Treze de Julho,49000-000,Aracaju,2800308,Sergipe,SE,Mouse Optico,1031,Boleto,2026-06-05,3443,60.00,2,120.00
+467.013.579-22,Letícia,Assis,(81) 96543-7654,Av. Agamenon Magalhães,223,Sala 14,Espinheiro,52020-000,Recife,2611606,Pernambuco,PE,Suporte para Notebook,1032,Cartão,2026-06-06,4554,90.00,1,90.00
+578.124.690-33,Gabriel,Marques,(82) 95432-6543,Av. Fernandes Lima,334,Casa,Farol,57000-000,Maceió,2704302,Alagoas,AL,Filtro de Linha 6 tomadas,1033,PIX,2026-06-06,5665,95.00,1,95.00
+689.235.701-44,Vanessa,Guimarães,(84) 94321-5432,Av. Hermes da Fonseca,445,Apto 11,Tirol,59000-000,Natal,2408102,Rio Grande do Norte,RN,Pen Drive 64GB,1034,Cartão,2026-06-07,6776,50.00,3,150.00
+800.346.812-55,Felipe,Moura,(85) 93210-4321,Av. Santos Dumont,556,Apto 704,Aldeota,60150-160,Fortaleza,2304400,Ceará,CE,Repetidor de Sinal,1035,Boleto,2026-06-07,7887,130.00,1,130.00
+911.457.923-66,Camila,Azevedo,(86) 92109-3210,Av. Frei Serafim,667,Sala 2,Centro,64000-000,Teresina,2211001,Piauí,PI,Carregador Sem Fio,1036,Cartão,2026-06-08,8998,180.00,1,180.00
+022.568.034-77,Vitor,Goulart,(91) 91098-2109,Av. Nazaré,778,Apto 501,Nazaré,66000-000,Belém,1501402,Pará,PA,Organizador de Cabos,1037,PIX,2026-06-08,9009,35.00,2,70.00
+133.679.145-88,Juliana,Fontes,(92) 90987-1098,Av. Eduardo Ribeiro,889,Casa,Centro,69000-000,Manaus,1302603,Amazonas,AM,Luminária de Mesa,1038,Cartão,2026-06-08,1122,120.00,1,120.00
+244.790.256-99,Arthur,Sales,(95) 99876-0987,Av. Ville Roy,990,Apto 22,Canarinho,69300-000,Boa Vista,1400100,Roraima,RR,Webcam Full HD,1039,PIX,2026-06-08,2234,450.00,1,450.00
+355.901.367-00,Bianca,Ramos,(98) 98765-0876,Av. Litorânea,101,Casa,Calhau,65000-000,São Luís,2111300,Maranhão,MA,Suporte Monitor Duplo,1040,Boleto,2026-06-08,3345,280.00,1,280.00
