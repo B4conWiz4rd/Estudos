@@ -1,0 +1,40 @@
+SELECT
+	c.ID_Clientes,
+	c.CPF,
+	c.nome,
+	c.telefone,
+	c.data_nascimento,
+	
+	e.rua,
+	e.numero,
+	e.bairro,
+	e.cidade,
+	e.uf,
+	e.CEP,
+	
+	p.Num_Pedido,
+	p.Pagamento,
+	p.Valor_Total,
+	
+	pr.Cod_Item,
+	pr.Descricao,
+	ip.Quantidade,
+	ip.Valor_Uni,
+	
+	(ip.Quantidade * ip.Valor_Uni) as Total_item
+
+FROM Cliente c
+
+INNER JOIN Endereco e 
+	on c.ID_Clientes = e.ID_Clientes
+
+INNER JOIN Pedido p
+	on c.ID_Clientes = p.ID_Clientes
+
+INNER JOIN Item_Pedido ip
+	on p.Num_Pedido = ip.Num_Pedido
+
+INNER JOIN Produtos pr
+	on ip.Cod_Item = pr.Cod_Item
+	
+ORDER by c.nome, p.Num_Pedido;

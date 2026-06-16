@@ -1,0 +1,30 @@
+CREATE TABLE "Cliente" (
+	"ID_Clientes"	INTEGER,
+	"CPF"	VARCHAR(14),
+	"nome"	VARCHAR(100),
+	"telefone"	VARCHAR(20),
+	"data_nascimento"	date,
+	PRIMARY KEY("ID_Clientes")
+);
+
+CREATE TABLE "Endereco" (
+	"ID_Endereco"	INTEGER,
+	"ID_Clientes"	INTEGER FOREIGNKEY,
+	"rua"	VARCHAR(100),
+	"numero"	VARCHAR(10),
+	"bairro"	VARCHAR(50),
+	"cidade"	VARCHAR(50),
+	"UF"	CHAR(2),
+	"CEP"	VARCHAR(9),
+	PRIMARY KEY("ID_Endereco"),
+	FOREIGN KEY("ID_Clientes") REFERENCES "Cliente"("ID_Clientes")
+);
+
+CREATE TABLE "Pedido" (
+	"Num_Pedido"	INTEGER,
+	"ID_Clientes"	INTEGER FOREIGNKEY,
+	"Pagamento"	VARCHAR(30),
+	"Valor_Total"	decimal(10, 2),
+	PRIMARY KEY("Num_Pedido"),
+	FOREIGN KEY("ID_Clientes") REFERENCES "Cliente"("ID_Clientes")
+);
