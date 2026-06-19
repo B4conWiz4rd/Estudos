@@ -1,0 +1,161 @@
+<?php
+    $computadoFunc = [
+        [
+            'nome' => "Daten",
+            'descricao' => "Computador Daten funcionando.",
+            'foto' => "",
+        ],
+        [
+            'nome' => "Positivo Novo",
+            'descricao' => "Computador Prositivo de modelo novo, funcionando.",
+            'foto' => "",
+        ],
+        [
+            'nome' => "Positivo Antigo",
+            'descricao' => "Computador Prositivo de modelo antigo, funcionando.",
+            'foto' => "",
+        ],
+    ];
+    $computadoNaoFunc = [
+        [
+            'nome' => "Daten",
+            'descricao' => "Computador Daten funcionando.",
+            'foto' => "",
+        ],
+        [
+            'nome' => "Positivo Novo",
+            'descricao' => "Computador Prositivo de modelo novo, não está funcionando.",
+            'foto' => "",
+        ],
+        [
+            'nome' => "Positivo Antigo",
+            'descricao' => "Computador Prositivo de modelo novo, não está funcionando.",
+            'foto' => "",
+        ],
+    ]
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Estilização-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--Lib-->
+    <script type="module" src="assets/JS/lib.js"></script>
+</head>
+
+<body>
+
+    <header data-bs-theme="dark">
+        <div class="collapse text-bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4>Acessos</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="admin.html" class="text-white">Admin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="assets/img/pc.jpg" alt="icone de um computador" width="60">
+                    <strong>Pc bolado REVENDAS</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-bold">Pc bolado REVENDAS</h1>
+                    <p class="">
+                        Consiga peças para o seu computador com os preços a baixo do mercado! Todas as peças foram
+                        recondicionadas com o nosso selo de garantia! Aqui você tambêm pode encontrar peças não
+                        funcionando para retirada de peças para reparo! Não vendemos lixo, nós fazemos reposição.
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-primary my-2">Produtos Funcionando</a>
+                        <a href="#" class="btn btn-secondary my-2">Produtos não Funcionando</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+
+                <hr>
+                <div class="album py-5">
+                    <h2>Computadores Funcionando</h2>
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <amostra-prod
+                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
+                                <b>Daten</b><br>
+                                Blá Blá Blá
+                            </amostra-prod>
+
+                            <amostra-prod
+                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
+                                <b>Positivo novo</b><br>
+                                Blá Blá Blá
+                            </amostra-prod>
+
+                            <amostra-prod
+                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
+                                <b>Positivo velho</b><br>
+                                Blá Blá Blá
+                            </amostra-prod>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="album py-5">
+                    <h2>Computadores não Funcionando</h2>
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <amostra-prod
+                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
+                                <b>Daten</b><br>
+                                Blá Blá Blá
+                            </amostra-prod>
+
+                            <amostra-prod
+                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
+                                <b>Positivo novo</b><br>
+                                Blá Blá Blá
+                            </amostra-prod>
+
+                            <amostra-prod
+                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
+                                <b>Positivo velho</b><br>
+                                Blá Blá Blá
+                            </amostra-prod>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
