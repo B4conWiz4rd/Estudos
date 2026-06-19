@@ -91,7 +91,7 @@ $produtoAlmoco = [
                 <?php foreach ($produtoCafe as $cafe): ?>
                     <div class="container-produto">
                         <div class="container-foto">
-                            <img src="<?php echo $cafe['imagem'] ?>">
+                            <img src=".">
                         </div>
                         <p><?php echo $cafe['nome'] ?></p>
                         <p><?php echo $cafe['descricao'] ?></p>

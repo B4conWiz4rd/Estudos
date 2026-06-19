@@ -1,36 +1,77 @@
 <?php
     $computadoFunc = [
         [
-            'nome' => "Daten",
+            'nome' => "Daten 01",
             'descricao' => "Computador Daten funcionando.",
-            'foto' => "",
+            'foto' => "/assets/img/daten/funcionando/daten01-func.jpeg",
         ],
         [
-            'nome' => "Positivo Novo",
-            'descricao' => "Computador Prositivo de modelo novo, funcionando.",
-            'foto' => "",
+            'nome' => "Daten 02",
+            'descricao' => "Computador Daten funcionando.",
+            'foto' => "/assets/img/daten/funcionando/daten02-func.jpeg",
         ],
         [
-            'nome' => "Positivo Antigo",
-            'descricao' => "Computador Prositivo de modelo antigo, funcionando.",
-            'foto' => "",
+            'nome' => "Daten 03",
+            'descricao' => "Computador Daten funcionando.",
+            'foto' => "/assets/img/daten/funcionando/daten03-func.jpeg",
+        ],
+        [
+            'nome' => "Daten 04",
+            'descricao' => "Computador Daten funcionando.",
+            'foto' => "/assets/img/daten/funcionando/daten04-func.jpeg",
+        ],
+        [
+            'nome' => "Positivo 01",
+            'descricao' => "Computador Positivo funcionando.",
+            'foto' => "/assets/img/positivo/funcionando/posi01-func.jpeg",
         ],
     ];
     $computadoNaoFunc = [
+        
         [
-            'nome' => "Daten",
-            'descricao' => "Computador Daten funcionando.",
-            'foto' => "",
+            'nome' => "Daten 01",
+            'descricao' => "Computador Daten não está funcionando.",
+            'foto' => "/assets/img/daten/nao-funcionando/daten01-nfunc.jpeg",
         ],
         [
-            'nome' => "Positivo Novo",
-            'descricao' => "Computador Prositivo de modelo novo, não está funcionando.",
-            'foto' => "",
+            'nome' => "Daten 02",
+            'descricao' => "Computador Daten não está funcionando.",
+            'foto' => "/assets/img/daten/nao-funcionando/daten02-nfunc.jpeg",
         ],
         [
-            'nome' => "Positivo Antigo",
-            'descricao' => "Computador Prositivo de modelo novo, não está funcionando.",
-            'foto' => "",
+            'nome' => "Daten 03",
+            'descricao' => "Computador Daten não está funcionando.",
+            'foto' => "/assets/img/daten/nao-funcionando/daten03-nfunc.jpeg",
+        ],
+        [
+            'nome' => "Daten 04",
+            'descricao' => "Computador Daten não está funcionando.",
+            'foto' => "/assets/img/daten/nao-funcionando/daten04-nfunc.jpeg",
+        ],
+        [
+            'nome' => "Postivo 01",
+            'descricao' => "Computador Positivo não está funcionando.",
+            'foto' => "/assets/img/positivo/nao-funcionando/posi01-nfunc.jpeg",
+        ],
+        [
+            'nome' => "Postivo 02",
+            'descricao' => "Computador Positivo não está funcionando.",
+            'foto' => "/assets/img/positivo/nao-funcionando/posi02-nfunc.jpeg",
+        ],
+        [
+            'nome' => "Postivo 03",
+            'descricao' => "Computador Positivo não está funcionando.",
+            'foto' => "/assets/img/positivo/nao-funcionando/posi03-nfunc.jpeg",
+        ],
+        [
+            'nome' => "Postivo 04",
+            'descricao' => "Computador Positivo não está funcionando.",
+            'foto' => "/assets/img/positivo/nao-funcionando/posi04-nfunc.jpeg",
+        ],
+        [
+            'nome' => "Postivo 05",
+            'descricao' => "Computador Positivo não está funcionando.",
+            'foto' => "/assets/img/positivo/nao-funcionando/posi05-nfunc.jpeg",
         ],
     ]
 ?>
@@ -91,8 +132,8 @@
                         funcionando para retirada de peças para reparo! Não vendemos lixo, nós fazemos reposição.
                     </p>
                     <p>
-                        <a href="#" class="btn btn-primary my-2">Produtos Funcionando</a>
-                        <a href="#" class="btn btn-secondary my-2">Produtos não Funcionando</a>
+                        <a href="#pcFunciona" class="btn btn-primary my-2">Produtos Funcionando</a>
+                        <a href="#pcNFunciona" class="btn btn-secondary my-2">Produtos não Funcionando</a>
                     </p>
                 </div>
             </div>
@@ -101,52 +142,32 @@
             <div>
 
                 <hr>
-                <div class="album py-5">
+                <div class="album py-5" id="pcFunciona">
                     <h2>Computadores Funcionando</h2>
                     <div class="container">
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                            <amostra-prod
-                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
-                                <b>Daten</b><br>
-                                Blá Blá Blá
-                            </amostra-prod>
-
-                            <amostra-prod
-                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
-                                <b>Positivo novo</b><br>
-                                Blá Blá Blá
-                            </amostra-prod>
-
-                            <amostra-prod
-                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
-                                <b>Positivo velho</b><br>
-                                Blá Blá Blá
-                            </amostra-prod>
+                            <?php foreach ($computadoFunc as $pcFun): ?>
+                                <amostra-prod
+                                    img='<?php echo $pcFun['foto'] ?>'>
+                                    <b><?php echo $pcFun['nome'] ?></b><br>
+                                    <?php echo $pcFun['descricao'] ?>
+                                </amostra-prod>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
                 <hr>
-                <div class="album py-5">
+                <div class="album py-5" id="pcNFunciona">
                     <h2>Computadores não Funcionando</h2>
                     <div class="container">
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                            <amostra-prod
-                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
-                                <b>Daten</b><br>
-                                Blá Blá Blá
-                            </amostra-prod>
-
-                            <amostra-prod
-                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
-                                <b>Positivo novo</b><br>
-                                Blá Blá Blá
-                            </amostra-prod>
-
-                            <amostra-prod
-                                img='https://shinyrating.com/wp-content/uploads/2023/06/pm143.cGOFEST_2022_NOEVOLVE.s.icon_.png'>
-                                <b>Positivo velho</b><br>
-                                Blá Blá Blá
-                            </amostra-prod>
+                            <?php foreach ($computadoNaoFunc as $pcNF): ?>
+                                <amostra-prod
+                                    img='<?php echo $pcNF['foto'] ?>'>
+                                    <b><?php echo $pcNF['nome'] ?></b><br>
+                                    <?php echo $pcNF['descricao'] ?>
+                                </amostra-prod>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
