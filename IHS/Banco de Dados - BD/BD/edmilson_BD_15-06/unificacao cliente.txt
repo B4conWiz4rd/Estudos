@@ -1,5 +1,5 @@
 SELECT
-	c.ID_Clientes,
+	c.ID_Cliente,
 	c.CPF,
 	c.nome,
 	c.telefone,
@@ -26,10 +26,10 @@ SELECT
 FROM Cliente c
 
 INNER JOIN Endereco e 
-	on c.ID_Clientes = e.ID_Clientes
+	on c.ID_Cliente = e.ID_Cliente
 
 INNER JOIN Pedido p
-	on c.ID_Clientes = p.ID_Clientes
+	on c.ID_Cliente = p.ID_Cliente
 
 INNER JOIN Item_Pedido ip
 	on p.Num_Pedido = ip.Num_Pedido
