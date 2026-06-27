@@ -1,25 +1,29 @@
 <?php
+ $dbPath = __DIR__ . '/../data/database.sqlite';
 
-// Cria e conecta ao banco de dados
-$dbPath = '../src/data/pcBolado.sqlite';
+// Garante que o diretório existe
+if (!file_exists(__DIR__ . '/../data')) {
+    mkdir(__DIR__ . '/../data', 0777, true);
+}
+
 $pdo = new PDO("sqlite:$dbPath");
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 echo "Banco de dados criado e conectado com sucesso! \n";
 
 
 
-// Cria a tabela
-$pdo->exec('CREATE TABLE computador (
+ $pdo->exec('CREATE TABLE IF NOT EXISTS computador (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     situacao TEXT NOT NULL,
     marca TEXT NOT NULL,
     descricao TEXT NOT NULL,
-    imagem TEXT NOT NULL,
-);');
+    imagem TEXT NOT NULL
+)');
 echo "Tabela 'computador' criada com sucesso! \n";
 
 
 // Executa os INSERTs
-$sql = "
+ $sql = "
 INSERT INTO computador (situacao, marca, descricao, imagem) VALUES 
 ('FUNCIONANDO','DATEN','Computador Daten funcionando.','/assets/img/daten/funcionando/daten01-func.jpeg'),
 ('FUNCIONANDO','DATEN','Computador Daten funcionando.','/assets/img/daten/funcionando/daten02-func.jpeg'),
@@ -37,5 +41,5 @@ INSERT INTO computador (situacao, marca, descricao, imagem) VALUES
 ('NAO-FUNCIONANDO','POSITIVO','Computador Positvo não está funcionando.','/assets/img/positivo/nao-funcionando/posi05-nfunc.jpeg');
 ";
 
-$pdo->exec($sql);
+ $pdo->exec($sql);
 echo "Produtos inseridos com sucesso!";
